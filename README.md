@@ -17,10 +17,26 @@
 - Verify that the app is running at `http://localhost:7221`
 - You're good to go!
 
-## Moncy's Decisions
+## Moncy's Thoughts/Decisions
 
-I used one of my Remix starter kits as a template for this project. I'm not sure
-if it's the best way to do it but it worked for me.
+Hey ok, the assignment was pretty fun. Didnt expect it to be this long. I
+couldnt finish everything in 4 hours max even though I used one of my Remix
+starter kits as a template for this project. I had to leave the logic for
+calculating the next scheduled campaign date in the `index.tsx` file unfinished.
+It was about 70% done but I didnt have time to finish it.
+
+I managed to complete the following features:
+
+- Create a new campaign
+- Edit a campaign
+- Table with campaigns and campaign schedules
+
+About calculating the next scheduled campaign date:
+
+I would use a loop to iterate through the days of the week starting from
+tomorrow (Have to take care to make sure to make sure the loop doesnt go past
+the end date) and check if the campaign is scheduled. If it is scheduled, return
+the date.
 
 ### Database design
 
